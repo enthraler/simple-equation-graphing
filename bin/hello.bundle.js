@@ -57,21 +57,21 @@ define(["jquery"], function(__WEBPACK_EXTERNAL_MODULE_1__) { return /******/ (fu
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 	var Hello = function () {
-		function Hello(config) {
-			_classCallCheck(this, Hello);
+	    function Hello(config) {
+	        _classCallCheck(this, Hello);
 
-			this.container = (0, _jquery2.default)(config.container);
-		}
+	        this.container = (0, _jquery2.default)(config.container);
+	    }
 
-		_createClass(Hello, [{
-			key: 'render',
-			value: function render(authorData) {
-				var greeting = 'Hello ' + authorData.name + ', I am an AMD JS Module compiled with Webpack and Babel!';
-				this.container.text(greeting);
-			}
-		}]);
+	    _createClass(Hello, [{
+	        key: 'render',
+	        value: function render(authorData) {
+	            var greeting = 'Hello ' + authorData.name + ', I am an AMD JS Module compiled with Webpack and Babel!';
+	            this.container.text(greeting);
+	        }
+	    }]);
 
-		return Hello;
+	    return Hello;
 	}();
 
 	// Please note, using es6 `export default ...` will not work with babel/webpack exporting an AMD module.
