@@ -3,7 +3,6 @@ module.exports = {
     output: {
         path: './bin',
         filename: 'hello.bundle.js',
-        pathInfo: true,
         libraryTarget: 'amd',
     },
     module: {

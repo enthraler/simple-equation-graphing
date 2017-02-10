@@ -1,6 +1,6 @@
 import $ from 'jquery';
 
-class Hello {
+export default class Hello {
     constructor(config) {
         this.container = $(config.container);
     }
@@ -10,8 +10,3 @@ class Hello {
         this.container.text(greeting);
     }
 }
-
-// Please note, using es6 `export default ...` will not work with babel/webpack exporting an AMD module.
-// See http://stackoverflow.com/a/33506169/180995
-// So we use `module.exports = ...` directly.
-module.exports = Hello;
