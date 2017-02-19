@@ -82,8 +82,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!./../node_modules/css-loader/index.js??ref--0-1!./../node_modules/less-loader/index.js??ref--0-2!./hello.less", function() {
-			var newContent = require("!!./../node_modules/css-loader/index.js??ref--0-1!./../node_modules/less-loader/index.js??ref--0-2!./hello.less");
+		module.hot.accept("!!./../node_modules/css-loader/index.js??ref--1-1!./../node_modules/less-loader/index.js??ref--1-2!./hello.less", function() {
+			var newContent = require("!!./../node_modules/css-loader/index.js??ref--1-1!./../node_modules/less-loader/index.js??ref--1-2!./hello.less");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -422,30 +422,46 @@ function updateLink(linkElement, obj) {
 
 /***/ }),
 /* 5 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__hello_less__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__hello_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__hello_less__);
 
 
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 
-class Hello {
-    constructor(config) {
-        this.header = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('<h1>').appendTo(config.container);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(1);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+__webpack_require__(0);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Hello = function () {
+    function Hello(config) {
+        _classCallCheck(this, Hello);
+
+        this.header = (0, _jquery2.default)('<h1>').appendTo(config.container);
     }
 
-    render(authorData) {
-        var greeting = `Hello ${authorData.name}, I am an AMD JS Module compiled with Webpack and Babel!`;
-        this.header.text(greeting);
-    }
-}
-/* harmony export (immutable) */ __webpack_exports__["default"] = Hello;
+    _createClass(Hello, [{
+        key: 'render',
+        value: function render(authorData) {
+            var greeting = 'Hello ' + authorData.name + ', I am an AMD JS Module compiled with Webpack and Babel!';
+            this.header.text(greeting);
+        }
+    }]);
 
+    return Hello;
+}();
 
+exports.default = Hello;
 
 /***/ })
 /******/ ])});;
