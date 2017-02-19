@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import './hello.less';
 
 export default class Hello {
     constructor(config) {
