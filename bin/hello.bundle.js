@@ -448,6 +448,7 @@ var Hello = function () {
         _classCallCheck(this, Hello);
 
         this.header = (0, _jquery2.default)('<h1>').appendTo(config.container);
+        this.environment = config.environment;
     }
 
     _createClass(Hello, [{
@@ -455,6 +456,7 @@ var Hello = function () {
         value: function render(authorData) {
             var greeting = 'Hello ' + authorData.name + ', I am an AMD JS Module compiled with Webpack and Babel!';
             this.header.text(greeting);
+            this.environment.requestHeightChange();
         }
     }]);
 
