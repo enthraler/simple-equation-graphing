@@ -2,9 +2,9 @@ import $ from 'jquery';
 import './hello.less';
 
 export default class Hello {
-    constructor(config) {
-        this.header = $('<h1>').appendTo(config.container);
-        this.environment = config.environment;
+    constructor(environment) {
+        this.header = $('<h1>').appendTo(environment.container);
+        this.environment = environment;
     }
 
     render(authorData) {
