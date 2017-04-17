@@ -1,0 +1,11 @@
+body {
+	/*background: #7777AA;*/
+	/*color: #FFFFFF;*/
+}
+h1 {
+    text-align: center;
+    font-weight: 500;
+}
+#function-plot-canvas {
+    max-width: 100%;
+}

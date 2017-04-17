@@ -1,0 +1,17 @@
+{
+    "allowZoom": true,
+    "xLabel": "Distance",
+    "yLabel": "Time",
+    "defaultSize": {
+        "xMin": -25,
+        "xMax": 25,
+        "yMin": -50,
+        "yMax": 50
+    },
+    "lines": [
+        {
+            "name": "Linear",
+            "fn": "y=3x+22"
+        }
+    ]
+}

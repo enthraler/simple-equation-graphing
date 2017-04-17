@@ -1,0 +1,20 @@
+{
+    "showGrid": true,
+    "lines": [
+        {
+            "name": "Linear",
+            "fn": "y=x",
+            "color": "red"
+        },
+        {
+            "name": "Quadratic",
+            "fn": "y=x^2",
+            "color": "green"
+        },
+        {
+            "name": "Cubic",
+            "fn": "y=x^3",
+            "color": "blue"
+        }
+    ]
+}

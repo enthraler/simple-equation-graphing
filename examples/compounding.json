@@ -1,0 +1,18 @@
+{
+    "xLabel": "Time (Years)",
+    "yLabel": "Amount ($)",
+    "defaultSize": {
+        "xMin": 0,
+        "xMax": 30,
+        "yMin": 0,
+        "yMax": 5000
+    },
+    "lines": [
+        {
+            "name": "$1000 Compounding quarterly at 4.3%PA over 30 years",
+            "formula": "y=P(1+r/n)^nt",
+            "fn": "y=1000*(1+0.043/4)^(4x)",
+            "graphType": "polyline"
+        }
+    ]
+}

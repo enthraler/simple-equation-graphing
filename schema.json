@@ -1,0 +1,27 @@
+{
+    "allowZoom": "?bool",
+    "showGrid": "?bool",
+    "xLabel": "?string",
+    "yLabel": "?string",
+    "defaultSize": {
+        "optional": "true",
+        "type": "shape",
+        "shape": {
+            "xMin": "integer",
+            "xMax": "integer",
+            "yMin": "integer",
+            "yMax": "integer"
+        }
+    },
+    "lines": {
+        "type": "arrayOf",
+        "subType": {
+            "type": "shape",
+            "shape": {
+                "fn": "string",
+                "name": "?string",
+                "color": "?string"
+            }
+        }
+    }
+}
